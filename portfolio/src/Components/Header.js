@@ -40,14 +40,16 @@ const Header = () => {
           >
             Dhiyaneshkannan R
           </Text>
-          <Text color={isDark ? "gray.200" : "gray.500"}>
+          <Text  fontSize="2xl"  fontWeight="bold" color={isDark ? "gray.200" : "gray.500"}>
             Certified Full-Stack MERN Developer
           </Text>
           <Text color={isDark ? "gray.200" : "gray.500"}>
-            Associate Software Engineer @Indus Net Technologies
+            My Passion is Software Developing. I want to discover more about the
+            amazing Software Technology. My goal is to grow as a person and a
+            professional, everyday.
           </Text>
           <Button mt={8} colorScheme="blue">
-            Hire Me
+            Contact me
           </Button>
         </Box>
         <Image

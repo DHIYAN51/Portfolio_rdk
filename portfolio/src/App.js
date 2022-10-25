@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import Header from "./Components/Header";
 import Social from "./Components/Social";
+import Profile from "./Components/Profile";
 
 const App = () => {
   const {colorMode,toggleColorMode} = useColorMode();
@@ -62,6 +63,7 @@ const App = () => {
       </Flex>
       <Header/>
       <Social/>
+      <Profile/>
     </VStack>
   );
 };
