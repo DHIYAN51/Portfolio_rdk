@@ -16,8 +16,8 @@ const Header = () => {
           position="absolute"
           bg="blue.100"
           opacity="0.1"
-          w="300px"
-          h="300px"
+          w="250px"
+          h="250px"
           alignSelf="flex-end"
         />
       )}
@@ -45,8 +45,7 @@ const Header = () => {
           </Text>
           <Text color={isDark ? "gray.200" : "gray.500"}>
             My Passion is Software Developing. I want to discover more about the
-            amazing Software Technology. My goal is to grow as a person and a
-            professional, everyday.
+            amazing Software Technology. 
           </Text>
           <Button mt={8} colorScheme="blue">
             Contact me

@@ -1,7 +1,7 @@
 import React from "react";
 import { IconButton } from "@chakra-ui/button";
 import { VStack, Flex, Heading, Spacer } from "@chakra-ui/layout";
-import {useColorMode} from "@chakra-ui/color-mode"
+import { useColorMode } from "@chakra-ui/color-mode";
 import {
   FaSun,
   FaMoon,
@@ -14,16 +14,16 @@ import Social from "./Components/Social";
 import Profile from "./Components/Profile";
 
 const App = () => {
-  const {colorMode,toggleColorMode} = useColorMode();
+  const { colorMode, toggleColorMode } = useColorMode();
 
-  const isDark = colorMode==="dark";
+  const isDark = colorMode === "dark";
   return (
     <VStack p="5">
       <Flex w="100%">
         <Heading ml="8" size="md" fontWeight="semibold" color="cyan.400">
           Dhiyanesh
         </Heading>
-        <Spacer/>
+        <Spacer />
         <IconButton
           ml={2}
           icon={<FaLinkedin />}
@@ -34,14 +34,14 @@ const App = () => {
             )
           }
         />
-      
+
         <IconButton
           ml={2}
           icon={<FaGithub />}
           isRound="true"
           onClick={() => window.open("https://github.com/DHIYAN51")}
         />
-        
+
         <IconButton
           ml={2}
           icon={<FaInstagram />}
@@ -52,18 +52,20 @@ const App = () => {
             )
           }
         />
-    
+
         <IconButton
-             ml={8}
-          icon={isDark ? <FaSun /> : <FaMoon/>}
+          ml={8}
+          icon={isDark ? <FaSun /> : <FaMoon />}
           isRound="true"
           onClick={toggleColorMode}
         />
-        
       </Flex>
-      <Header/>
-      <Social/>
-      <Profile/>
+
+      <Header />
+
+      <Social />
+
+      <Profile />
     </VStack>
   );
 };
