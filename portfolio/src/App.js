@@ -18,6 +18,7 @@ const App = () => {
 
   const isDark = colorMode === "dark";
   return (
+    <div className="container-fluid">
     <VStack p="5">
       <Flex w="100%">
         <Heading ml="8" size="md" fontWeight="semibold" color="cyan.400">
@@ -62,11 +63,11 @@ const App = () => {
       </Flex>
 
       <Header />
-
       <Social />
-
       <Profile />
+      
     </VStack>
+    </div>
   );
 };
 
